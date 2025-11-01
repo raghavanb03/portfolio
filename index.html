@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghavan Balanathan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tech-background" id="techBg">
+        <div class="hexagon" style="top: 10%; left: 5%;"></div>
+        <div class="hexagon" style="top: 60%; left: 10%;"></div>
+        <div class="hexagon" style="top: 20%; right: 15%;"></div>
+        <div class="hexagon" style="bottom: 20%; right: 5%;"></div>
+        <div class="hexagon" style="bottom: 40%; left: 20%;"></div>
+    </div>
+
+    <nav>
+        <div class="logo">RB</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#publications">Publications</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <a href="files/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        </div>
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <img src="images/mypic.jpg" alt="Profile Photo" class="profile-photo">
+        <div class="typing-container">
+            <div class="typing-text" id="typingText"></div>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/raghavanbala/" class="social-link">💼 LinkedIn</a>
+            <a href="mailto:raghavanb2103@gmail.com" class="social-link">📧 Email</a>
+            <a href="files/Resume.pdf" target="_blank" rel="noopener noreferrer" class="social-link" download>📄 Resume</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>I'm a Computer Science Master's student specializing in AI/ML and Data Science, passionate about building systems that understand context — from multimodal LLMs to scalable data pipelines. I recently completed my Bachelor of Technology in Computer Science and Engineering from National Institute of Technology, Trichy, India. Most recently, I was a Research Intern at Spring Lab, IITM, working on speech LLMs using discrete speech units for ASR.</p>
+            <p>My interests revolve around integrating fields like Natural Language Processing (NLP), Multimodal Learning, Data Science into software development in addressing real-world challenges. Currently seeking internship for Summer 2026, where I can contribute, collaborate with talented teams, and continue growing as a technologist.</p>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <p class="section-subtitle">Academic Background</p>
+        <div class="education-container">
+            <!-- Purdue University -->
+            <div class="education-card">
+                <div class="education-header">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/1200px-Purdue_Boilermakers_logo.svg.png" alt="Purdue University Logo" class="university-logo">
+                    <div class="education-info">
+                        <h3>MS in Computer Science</h3>
+                        <div class="university-name">Purdue University</div>
+                        <div class="education-meta">
+                            <span>📍 West Lafayette, IN</span>
+                            <span>📅 Expected Graduation: May 2027</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-details">
+                    <button class="coursework-toggle" data-target="purdue-coursework">
+                        📚 Relevant Coursework <span class="toggle-icon">▼</span>
+                    </button>
+                    <div id="purdue-coursework" class="coursework-content">
+                        <div class="coursework-grid">
+                            <div class="coursework-category">
+                                <h5>Fall 2025 Courses</h5>
+                                <ul>
+                                    <li>Statistical Machine Learning</li>
+                                    <li>Database Systems</li>
+                                    <li>Computer Networks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NIT Trichy -->
+            <div class="education-card">
+                <div class="education-header">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/NITT_logo.png" alt="NIT Trichy Logo" class="university-logo">
+                    <div class="education-info">
+                        <h3>B.Tech in Computer Science and Engineering</h3>
+                        <div class="university-name">National Institute of Technology Tiruchirappalli</div>
+                        <div class="education-meta">
+                            <span>📍 Tamil Nadu, India</span>
+                            <span>📅 Graduated: May 2025</span>
+                            <span>📊 GPA: 9.62/10</span>
+                            <span>📄 <a href="files/transcript.pdf" target="_blank" rel="noopener noreferrer">Transcript</a></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-details">
+                    
+
+                    <button class="coursework-toggle" data-target="nit-coursework">
+                        📚 Relevant Coursework <span class="toggle-icon">▼</span>
+                    </button>
+                    <div id="nit-coursework" class="coursework-content">
+                        <div class="coursework-grid">
+                            <div class="coursework-category">
+                                <h5>Software Engineering</h5>
+                                <ul>
+                                    <li>Data Structures & Algorithms</li>
+                                    <li>Object-Oriented Programming</li>
+                                    <li>Web Development</li>
+                                    <li>Database Systems</li>
+                                    <li>Operating Systems</li>
+                                    <li>Computer Networks</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="coursework-category">
+                                <h5>Data Science & AI</h5>
+                                <ul>
+                                    <li>Artificial Intelligence</li>
+                                    <li>Machine Learning</li>
+                                    <li>Deep Learning</li>
+                                    <li>Natural Language Processing</li>
+                                    <li>Image Processing</li>
+                                    <li>Responsible and Safe AI systems</li>
+                                    <li>Big Data Mining</li>
+                                    <li>Data Analytics</li>
+                                    <li>Data Science</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="coursework-category">
+                                <h5>Mathematics & Theory</h5>
+                                <ul>
+                                    <li>Linear Algebra</li>
+                                    <li>Calculus</li>
+                                    <li>Discrete Mathematics</li>
+                                    <li>Probability & Statistics</li>
+                                    <li>Algorithm Analysis</li>
+                                    <li>Computational Theory</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image data">
+                    <img src="images/miccai.png" alt="Surgical Tool Segmentation">
+                </div>
+                <div class="project-content">
+                    <h3>Continual Learning for Video Segmentation of Surgical Tool</h3>
+                    <p>Developed a Domain-Incremental Continual Learning framework for surgical tool segmentation using SAM2 trained with LoRA, enabling privacy-preserving adaptation to challenging surgical scenes. Improved segmentation accuracy by up to 5% using CLIP with K-Means parameter selection, outperforming LwF baselines.</p>
+                    <div class="skill-tags">
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">SAM2</span>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://drive.google.com/file/d/1wd6us3UVGQ-6cLprVqrRQCRhsZ2XfWwB/view">📄 Report</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image data">
+                    <img src="images/speechllm.png" alt="Speech LLM">
+                </div>
+                <div class="project-content">
+                    <h3>Speech LLM for ASR</h3>
+                    <p>Achieved less than 10% Word Error Rate (WER) using self-supervised models like HuBERT and LLMs to perform multi-modal multi-tasking with discrete speech units for Automatic Speech Recognition. Performed continual pretraining and fine-tuning of Large Language Models using QLoRA within FSDP settings, processing ∼1 TB of speech and text data.</p>
+                    <div class="skill-tags">
+                        <span class="tag">LLMs</span>
+                        <span class="tag">HuBERT</span>
+                        <span class="tag">QLoRA</span>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="files/speechllm.pdf">📊 Slides</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image data">
+                    <img src="images/skd.png" alt="Keyword Detection">
+                </div>
+                <div class="project-content">
+                    <h3>Spoken Keyword Detection Systems</h3>
+                    <p>Built an end-to-end query-by-example spoken keyword detection model (E2E-QBE-SKD) based on a transformer encoder that relies solely on audio for SKD. Enables the model to handle out-of-vocabulary keywords and unseen languages. Trained on 38K keywords from the English split of the MLCommons Multilingual Spoken Words Corpus, achieving 0.8 MTWV.</p>
+                    <div class="skill-tags">
+                        <span class="tag">Transformers</span>
+                        <span class="tag">Speech Processing</span>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://drive.google.com/file/d/1HalZeaJy94gkDbm7RLXHlabTmkrTxxkx/view?usp=sharing">📄 Report</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image software">
+                    <img src="images/SummarizeIQ.png" alt="Summarization Engine">
+                </div>
+                <div class="project-content">
+                    <h3>Schlumberger Hackathon: Summarization Engine</h3>
+                    <p>Engineered a FastAPI microservice using TorchServe to run the T5 Transformer model, providing scalable, low-latency abstractive NLP summarization of webpage articles. Implemented LexRank and TextRank algorithms within API pipelines for extractive summarization. Features keyword generation and query-based content filtering using cosine similarity.</p>
+                    <div class="skill-tags">
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">T5</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://github.com/FrozenWolf-Cyber/SummarizeIQ">💻 Github</a>
+                        <a href="https://drive.google.com/file/d/10ZGarptW67p3BKPzQDW0sfTHj9TN4qJH/view?usp=sharing">🏆 Certificate</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image data">
+                    <img src="images/L&T.png" alt="Surface Crack Detection">
+                </div>
+                <div class="project-content">
+                    <h3>L&T Hackathon: Surface Crack Detection App</h3>
+                    <p>Worked on surface crack detection system using state-of-the-art image classification models such as ResNet and Vision Transformers (ViT) using PyTorch. Integrated image classification model for real-time crack detection, capturing image timestamps, and location information.</p>
+                    <div class="skill-tags">
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">ViT</span>
+                        <span class="tag">ResNet</span>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://github.com/FrozenWolf-Cyber/L-T-EduTech-Hackathon">💻 Github</a>
+                        <a href="https://drive.google.com/file/d/1mr6jQ1T8lJJTb_NRBW7EYUAhK_CVmrpW/view?usp=sharing">🏆 Certificate</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image data">
+                    <img src="images/Abusive.png" alt="Abusive Comment Detection">
+                </div>
+                <div class="project-content">
+                    <h3>Abusive Comment Detection in Low-resource Language</h3>
+                    <p>Engaged in developing an abusive comment detection (hate speech) within low-resource NLP contexts in Tamil, leveraging SOTA Transformer Models such as MuRIL and XLM-RoBERTa. Conducted experiments utilizing back translation and lexical replacement for data augmentation. Achieved a 15 unit improvement in macro F1-score.</p>
+                    <div class="skill-tags">
+                        <span class="tag">Transformers</span>
+                        <span class="tag">Low-resource NLP</span>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://github.com/ICON-ML/ACDT">💻 Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image data">
+                    <img src="images/yoga.png" alt="Yoga Pal">
+                </div>
+                <div class="project-content">
+                    <h3>Yoga-Pal: Yoga Pose Instructor App</h3>
+                    <p>Engaged in building image classification models using Light OpenPose for joint detection and MediaPipe for pose estimation to extract coordinates to verify the pose. Utilised Google Text-To-Speech (GTTS) to provide instructions to user.</p>
+                    <div class="skill-tags">
+                        <span class="tag">OpenPose</span>
+                        <span class="tag">MediaPipe</span>
+                        <span class="tag">Computer Vision</span>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://drive.google.com/file/d/1zyeNb-0B27a40h0XlS9AdHnVH2HiTPJI/view?usp=sharing">🎥 Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image software">
+                    <img src="images/compiler.gif" alt="Python Compiler">
+                </div>
+                <div class="project-content">
+                    <h3>Yet Another Python Compiler</h3>
+                    <p>A Python Compiler, built with Bison and Flex, processes Python code by tokenizing it, parsing it into a syntax tree, and performing semantic checks. It generates intermediate code and applies optimizations like constant folding and dead code elimination. Key features include lexical analysis, syntax and semantic error detection, and code optimization.</p>
+                    <div class="skill-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Bison</span>
+                        <span class="tag">Flex</span>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://github.com/FrozenWolf-Cyber/YA-Python-Compiler">💻 Github</a>
+                        <a href="files/compiler.pdf">📊 Slides</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image data">
+                    <img src="images/Quad.png" alt="Quad Tree Collision">
+                </div>
+                <div class="project-content">
+                    <h3>Collision Detection Using Quad Trees</h3>
+                    <p>Coded a space shooter game in C++ using Quad Tree with HTML, CSS, JS interface for efficient collision detection among large numbers of objects with minimal latency. By organizing objects in a recursive 2D space division, reduces pairwise collision checks, ensuring rapid identification of potential collisions.</p>
+                    <div class="skill-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Data Structures</span>
+                        <span class="tag">Game Dev</span>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://github.com/DarkCoder999/Collison-Detection-using-Quad-Tree.git">💻 Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="section">
+        <h2>Publications & Research</h2>
+        <div class="publications-grid">
+            <div class="publication-card">
+                <h3>Continual Learning for Robust Video Segmentation of Robot-Assisted Surgical Tool</h3>
+                <div class="publication-meta">Efficient Medical AI (EMA4MICCAI) Workshop 2025</div>
+                <p>Gokul Adethya T, Nitish N, <b>Raghavan Balanathan</b>, Sitara, K</p>
+                <a class="pdf-link" href="https://drive.google.com/file/d/1wd6us3UVGQ-6cLprVqrRQCRhsZ2XfWwB/view">📄 PDF</a>
+                <span class="abstract-link" onclick="showAbstract('abstract1')">📄 View Abstract</span>
+            </div>
+
+            <div class="publication-card">
+                <h3>Forecasting airline passengers' satisfaction based on sentiments and ratings</h3>
+                <div class="publication-meta">Journal of Air Transport Management, 2024</div>
+                <p>Murugesan, R., A. P. Rekha, N. Nitish, and <b>Raghavan Balanathan</b></p>
+                <a class="pdf-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0969699724001339?via%3Dihub">📄 PDF</a>
+                <span class="abstract-link" onclick="showAbstract('abstract2')">📄 View Abstract</span>
+            </div>
+
+            <div class="publication-card">
+                <h3>Mitigating Abusive Comment Detection in Tamil Text: A Data Augmentation Approach</h3>
+                <div class="publication-meta">ACL Anthology, ICON 2023</div>
+                <p>Reshma, Sheik, <b>Raghavan Balanathan</b>, and S. Jaya Nirmala.</p>
+                <a class="pdf-link" href="https://aclanthology.org/2023.icon-1.39.pdf">📄 PDF</a>
+                <span class="abstract-link" onclick="showAbstract('abstract3')">📄 View Abstract</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('imageModal')">&times;</span>
+            <img id="modalImage" src="" alt="Project Image">
+        </div>
+    </div>
+
+    <!-- Abstract Modal -->
+    <div id="abstractModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('abstractModal')">&times;</span>
+            <div id="abstractContent" class="abstract-content"></div>
+        </div>
+    </div>
+
+    <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <p class="section-subtitle">Software Engineering, Data Analytics & AI/ML</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>💻 Software Engineering</h3>
+                <div class="skill-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">Linux</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>📊 Data Science</h3>
+                <div class="skill-tags">
+                    <span class="tag">MySQL</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Redis</span>
+                    <span class="tag">Apache Hadoop</span>
+                    <span class="tag">A/B Testing</span>
+                    <span class="tag">ETL Pipelines</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>🤖 Machine Learning</h3>
+                <div class="skill-tags">
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">Matplotlib</span>
+                    <span class="tag">Huggingface</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>Let's Build Something Amazing</h2>
+            <p class="contact-subtext">
+                I'm actively seeking internship opportunities in Software Engineering, Data Science, and AI/ML for Summer 2026. I look forward to connecting and exploring how I can meaningfully contribute to your team.
+            </p>
+            
+            <div class="contact-actions">
+                <a href="mailto:raghavanb2103@gmail.com" class="btn primary-btn">📧 Email Me</a>
+                <a href="https://linkedin.com/in/raghavanbala" target="_blank" rel="noopener noreferrer" class="btn outline-btn">💼 LinkedIn</a>
+                <a href="files/Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn gradient-btn" download>📄 Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">© 2025 Raghavan Balanathan.</p>
+        <p style="opacity: 0.7;">Open to Internships | Summer 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
